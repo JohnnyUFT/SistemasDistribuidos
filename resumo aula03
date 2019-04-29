@@ -1,0 +1,8 @@
+SISTEMAS DISTRIBUIDOS:
+- PROTOCOLO ORIENTADO A CONEXAO;
+- socket;
+- operacao send e receive;
+- resumo dos protocolos TCP e UDP;
+- TRABALHO PRATICO;
+
+precisaremos de thread e array de conexões;
