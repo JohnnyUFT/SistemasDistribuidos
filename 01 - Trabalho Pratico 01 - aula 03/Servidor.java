@@ -12,14 +12,10 @@ public class Servidor{
         
         System.out.println("Nova conexão com o cliente" + cliente.getInetAddress().getHostAddress());
 
-       // try {
-            Scanner entrada = new Scanner(cliente.getInputStream());
-            while (entrada.hasNextLine()) {
-                System.out.println("Mensagem recebida:" + entrada.nextLine());
-            }
-        // } catch (Exception e) {
-        //     System.out.println("Deu ruim!!!");
-        // }
+        Scanner entrada = new Scanner(cliente.getInputStream());
+        while (entrada.hasNextLine()) {
+            System.out.println("Mensagem recebida:" + entrada.nextLine());
+        }
 
         entrada.close();
         servidor.close();
